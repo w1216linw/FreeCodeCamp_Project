@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- header -->
+    <header id="header">
+      <nav id="nav-bar">
+        <div class="nav__header">
+          <img src="https://cdn-icons-png.flaticon.com/512/1050/1050915.png" alt="" id="header-img" class="logo">
+          <h1 class="title">Malamute</h1>
+        </div>
+          <ul class="nav-links">
+            <li><a class="nav-link" href="#alaskan">alaskan</a></li>
+            <li><a class="nav-link" href="#husky">husky</a></li>
+            <li><a class="nav-link" href="#samoyed">samoyed</a></li>
+          </ul>
+      </nav>
+    </header>
+    <!-- main -->
+    <main class="container">
+      <div class="breeds">
+        <div class="breed">
+          <div class="breed_text">
+            <h2 id="alaskan" class="subtitle">alaskan</h2>
+            <p class="description"><span class="keyword">T</span>he Alaskan Malamute is a large breed of dog that was originally bred for their strength and endurance to haul heavy freight as a sled dog and hound. They are similar to other arctic breeds such as the husky, the spitz, the Greenland Dog, Canadian Eskimo Dog, the Siberian Husky, and the Samoyed.</p>
+          </div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Alaskan_malamut_465.jpg/1280px-Alaskan_malamut_465.jpg" alt="alaskan">
+        </div>
+        <div class="breed">
+          <div class="breed_text">
+            <h2 id="husky" class="subtitle">husky</h2>
+            <p class="description"><span class="keyword">T</span>he Siberian Husky is a medium-sized working sled dog breed. The breed belongs to the Spitz genetic family. It is recognizable by its thickly furred double coat, erect triangular ears, and distinctive markings, and is smaller than the similar-looking Alaskan Malamute.</p>
+          </div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/8b/Husky_L.jpg" alt="husky">
+        </div>
+        <div class="breed">
+          <div class="breed_text">
+            <h2 id="samoyed" class="subtitle">samoyed</h2>
+            <p class="description"><span class="keyword">T</span>he Samoyed is a breed of medium-sized herding dogs with thick, white, double-layer coats. They are a spitz-type dog which takes its name from the Samoyedic peoples of Siberia. Descending from the Nenets Herding Laika, they are a domesticated animal that assists in herding, hunting, protection and sled-pulling</p>
+          </div>
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Samojed00.jpg/800px-Samojed00.jpg" alt="samoyed">
+        </div>
+      </div>
+      <div class="form-container">
+        <form id="form" action="https://www.freecodecamp.com/email-submit">
+          <label for="email">Want more information?</label>
+          <input type="email" id="email" placeholder="e.g. john@abc.efj" type=email name=email />
+          <input type="submit" id="submit" />
+        </form>
+      </div>
+      <div class="video_container">
+        <h2>Funny video</h2>
+        <iframe 
+        id="video"
+        src="https://www.youtube.com/embed/1krwz6SpSjQ" 
+        title="YouTube video player" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen></iframe>
+      </div>
+    </main>
+    <footer class="footer">
+      <p>Video From <a target='_blank' href="https://www.youtube.com/channel/UCF-tPp5v0DY6CzvYXlzqhsg">Niao Keijiang</a><br>Other resources from <a target="_blank" href="https://www.wikipedia.org/">wikipedia</a><br>Created by Weiwei Lin</p>
+    </footer>
+  </body>
+</html>

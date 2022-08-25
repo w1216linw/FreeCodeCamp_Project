@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- header -->
+    <header>
+      <h1 id="title">Survey Form</h1>
+      <p id="description"> Thank you for taking time to fill up this form.</p>
+    </header>
+    <!-- form -->
+    <form id="survey-form" action="">
+      <!-- background fieldset -->
+      <fieldset>
+        <label for="name" id="name-label">Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter Your Name" required>
+        <label for="email" id="email-label">Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter Your Email" required>
+        <label for="number" id="number-label">Number</label>
+          <input type="text" id="number" name="number" pattern="[\d]{8,12}" placeholder="Enter Your Number" >
+        <label for="age" id="age-label">Age <span>(optional)</span></label>
+          <input type="text" id="age" name="age" placeholder="Enter Your Age">
+      </fieldset>
+      <!-- acedemic fieldset -->
+      <fieldset>
+        <label for="dropdown">Which fileds has most interested you?</label>
+          <select name="major" id="dropdown">
+            <option value="0">(select one)</option>
+            <option value="1">Front End</option>
+            <option value="2">Back End</option>
+            <option value="3">Machine Learning</option>
+            <option value="4">AI</option>
+            <option value="5">Other</option>
+          </select>
+          <label for="grade">What grade are you in?</label>
+          <div class="grade-container">
+            <input type="radio" id="grade" name="grade" value="Fre"> Freshman in University
+            <input type="radio" id="grade" name="grade" Value="Sop"> Sophomore in University
+            <input type="radio" id="grade" name="grade" value="Jun"> Junior in University
+            <input type="radio" id="grade" name="grade" value="Sen"> Senior in University
+            <input type="radio" id="grade" name="grade" value="HS"> High School
+          </div>
+      </fieldset>
+      <!-- spare time fieldset -->
+      <fieldset>
+        <label for="spare" class="spare-label">What do you to do in you spare time?</label>
+          <div class="spare-container">
+            <input type="checkbox" id="spare" name="spare" value="badminotn"> Badminton
+            <input type="checkbox" id="spare" name="spare" value="basketball"> Basketball
+            <input type="checkbox" id="spare" name="spare" value="football"> Football
+            <input type="checkbox" id="spare" name="spare" value="volleyball"> Volleyball
+            <input type="checkbox" id="spare" name="spare" value="other"> Other
+          </div>
+        <label for="bio">How do you manage your time?</label>
+          <textarea name="bio" id="bio" cols="50" rows="10" placeholder="Coding entire day."></textarea>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit">
+    </form>
+  </body>
+</html>

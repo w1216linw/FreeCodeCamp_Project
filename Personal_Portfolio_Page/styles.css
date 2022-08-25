@@ -1,0 +1,25 @@
+:root {
+  
+--clr-p-1: #e0cffc;
+--clr-p-1: #C8AAFC;
+
+--clr-s-1: #004252;
+--clr-s-2: #00657e;
+
+--clr-t-1: #FFF7D0;
+--clr-t-2: #fae88f;
+
+--clr-gray-1:#B0A8B9;
+--clr-gray-2:#4c4653;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html{
+  margin: 0;
+  padding: 0;
+}
