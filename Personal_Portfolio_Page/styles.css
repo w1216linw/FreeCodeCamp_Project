@@ -95,10 +95,15 @@ img:not(.logo) {
   height: 2rem;
 }
 
+.fcc{
+  border-radius: 50%;
+}
+
 .nav-links {
   display: flex;
   list-style-type: none;
-  width: max(25rem,30vw);
+  gap: 1rem;
+  width: max(25rem,30vw); 
   justify-content: space-between;
 }
 
@@ -261,7 +266,7 @@ img:not(.logo) {
 }
 
 .social-links {
-  width: 40%;
+  width: min(50rem, 55%);
   list-style: none;
   display: flex;
   align-items: center;
