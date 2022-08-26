@@ -5,55 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <!-- header -->
     <nav id="navbar">
       <div class="header-container">
-        <img src="" alt="logo">
+        <img class="logo" src="./icons/icon.png" alt="logo">
       </div>
       <ul class="nav-links">
-        <li class="nav-link"></li>
-        <li class="nav-link"></li>
-        <li class="nav-link"></li>
+        <li><a class="nav-link" href="#welcome-section">Section 1</a></li>
+        <li><a class="nav-link" href="#projects">Section 2</a></li>
+        <li><a class="nav-link" href="#ending-section">Section 3</a></li>
       </ul>
     </nav>
     <!-- main -->
     <main class="main-container">
+      <!-- Section 1 -->
       <section id="welcome-section" class="theme1">
-        <h1 class="welcome-text"></h1>
-        <p class="sub-text"></p>
+        <h1 class="welcome-text">Hello I am - - -</h1>
+        <p class="sub-text"><em>a web developer</em></p>
       </section>
+      <!-- Section 2 -->
       <section id="projects" class="theme2">
-        <h1 class="project-text"></h1>
+        <h2 class="project-text">Amazing projects</h2>
         <div class="project-container">
-          <a href="#" class="project">
-            <img src="" alt="" class="project-img">
-            <p class="project title"></p>
-          </a>
-          <a href="" class="project">
-            <img src="" alt="" class="project-img">
-            <p class="project title"></p>
-          </a>
-          <a href="" class="project">
-            <img src="" alt="" class="project-img">
-            <p class="project title"></p>
-          </a>
-          <a href="" class="project">
-            <img src="" alt="" class="project-img">
-            <p class="project title"></p>
-          </a>
-          <a href="" class="project">
-            <img src="" alt="" class="project-img">
-            <p class="project title"></p>
-          </a>
-          <a href="" class="project">
-            <img src="" alt="" class="project-img">
-            <p class="project title"></p>
-          </a>
+          <div class="project">
+            <p class="hide-text">For more information <br> &darr;</p>
+            <a href="#project">
+              <img class='project-img' src="./imgs/img1.jpg" alt="img from unsplash" class="project-img">
+              <p class="project-title"><span class="hide-tag">< </span>Lorem,ipsum dolor.<span class="hide-tag"> /></span></p>
+            </a>
+          </div>
+          <div class="project">
+            <p class="hide-text">For more information <br> &darr;</p>
+            <a href="#">
+              <img class='project-img' src="./imgs/img2.jpg" alt="img from unsplash" class="project-img">
+              <p class="project-title"><span class="hide-tag">< </span>Lorem,ipsum dolor.<span class="hide-tag"> /></span></p>
+            </a>
+          </div>
+          <div class="project">
+            <p class="hide-text">For more information <br> &darr;</p>
+            <a href="#">
+              <img class='project-img' src="imgs/img3.jpg" alt="img from unsplash" class="project-img">
+              <p class="project-title"><span class="hide-tag">< </span>Lorem,ipsum dolor.<span class="hide-tag"> /></span></p>
+            </a>
+          </div>
         </div>
       </section>
-      <section id="ending-section" class="theme1"></section>
+      <!-- Section 3 -->
+      <section id="ending-section" class="theme1">
+        <ul class="social-links">
+          <li>
+            <a href="" class="social-link">
+              <img src="./icons/github.png" alt="Github icon" class="social-icon logo">
+              <p>Github</p>
+            </a>
+          </li>
+          <li>
+            <a href="" class="social-link">
+              <img src="./icons/linkedin.png" alt="Linkedin icon" class="social-icon logo">
+              <p>Linkedin</p>
+            </a>
+          </li>
+          <li>
+            <a href="mailto: abc@example.com" class="social-link">
+              <img src="./icons/email.png" alt="email icon" class="social-icon logo">
+              <p>Send a mail</p>
+            </a>
+          </li>
+        </ul>
+      </section>
     </main>
   </body>
 </html>
