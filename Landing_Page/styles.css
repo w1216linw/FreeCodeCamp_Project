@@ -10,6 +10,7 @@
 :root {
   --clr-p-1: hsl(205, 86%, 17%);
   --clr-p-2: hsl(205, 81%, 66%);
+  --clr-p-2-h: hsla(205, 82%, 66%, 0.5);
   --clr-p-3: hsl(205, 85%, 79%);
   --clr-p-4: hsl(205, 72%, 90%);
   --grey: hsl(210, 36%, 96%);
@@ -265,16 +266,37 @@ a{
   height: 2.25rem;
   border-radius: 6px;
   border-color:var(--clr-p-2);
+  color: var(--clr-p-2);
   background-color: white;
   cursor: pointer;
-  transition: 250ms ease;
-  transition-property: background-color, color;
+  transition: color 150ms ease;
+  position: relative;
+  z-index: 1;
+}
+
+#submit::after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: var(--clr-p-2);
+  top:0;
+  left: 0;
+  z-index: -1;
+  transition: transform 250ms ease-in;
+  transform: scaleX(0);
+  transform-origin: right;
 }
 
 #submit:hover {
-  background-color: var(--clr-p-2);
-  color: white;
+  color:#fff;
 }
+
+#submit:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
 
 /* main - video container*/
 
